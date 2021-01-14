@@ -19,57 +19,160 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>6.9.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>6.9.1</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.3.3</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>8.4.1.jre8</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.12.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.12.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.12.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.1</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all -->
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>3.0.7</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>com.sun</groupId>
+			<artifactId>tools</artifactId>
+			<version>1.6</version>
+			<scope>system</scope>
+			<systemPath>C:\Program Files\Java\jdk1.8.0_261\lib\tools.jar</systemPath>
+		</dependency>
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
-        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
-        </plugin>
-        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.0.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-jar-plugin</artifactId>
-          <version>3.0.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <version>2.5.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
-        </plugin>
-        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
-        <plugin>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>3.7.1</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.0.0</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven 
+				defaults (may be moved to parent pom) -->
+			<plugins>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.22.1</version>
+				<configuration> 
+				  <testFailureIgnore>true</testFailureIgnore> 
+				    <includes> 
+						<include>cucumberOptions\TestRunner.java</include> 
+					</includes> 
+				</configuration>
+				</plugin>
+				<plugin>
+					<groupId>net.masterthought</groupId>
+					<artifactId>maven-cucumber-reporting</artifactId>
+					<version>5.0.0</version>
+					<executions>
+						<execution>
+							<id>execution</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>generate</goal>
+							</goals>
+							<configuration>
+								<projectName>rest-assured-bdd</projectName>
+								<!-- optional, per documentation set this to "true" to bypass generation 
+									of Cucumber Reports entirely, defaults to false if not specified -->
+								<skip>false</skip>
+
+								<!-- output directory for the generated report -->
+
+								<outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
+
+								<!-- optional, defaults to outputDirectory if not specified -->
+
+								<inputDirectory>${project.build.directory}/cucumber.json</inputDirectory>
+
+								<jsonFiles>
+
+									<!-- supports wildcard or name pattern -->
+
+									<param>**/*.json</param>
+
+								</jsonFiles>
+
+								<skippedFails>false</skippedFails>
+
+								<enableFlashCharts>true</enableFlashCharts>
+
+								<!-- optional, defaults to outputDirectory if not specified -->
+
+								<parallelTesting>false</parallelTesting>
+
+								<!-- optional, set true to group features by its Ids -->
+
+								<mergeFeaturesById>false</mergeFeaturesById>
+
+								<!-- optional, set true to get a final report with latest results 
+									of the same test from different test runs -->
+
+								<mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
+
+								<!-- optional, set true to fail build on test failures -->
+
+								<checkBuildResult>false</checkBuildResult>
+
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
   </build>
 </project>

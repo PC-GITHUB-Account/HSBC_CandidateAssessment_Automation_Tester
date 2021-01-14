@@ -1,0 +1,9 @@
+package pojo;
+
+public class CurrencyExchangeRate {
+	
+	
+	private String base;
+	private Rates rates;
+
+}
