@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="12.157">
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Latest Foreign Exchange rates API" time="3.575">
+<failure message="1 expectation failed.&#10;JSON path date doesn't match.&#10;Expected: 2021-01-14&#10;  Actual: 2021-01-15&#10;" type="java.lang.AssertionError"><![CDATA[Given user set Latest ForeignExchangeRates api..............................passed
+When user calls "LatestForeignExchangeRates" api with "Get" https request...passed
+Then user receive valid HTTP response code 200..............................passed
+And user validate "base" currency in response body as "EUR".................passed
+And user validate "date" in response body as Latest date....................failed
+And user validate count of total currencies under "rates" in response body is "32".skipped
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+JSON path date doesn't match.
+Expected: 2021-01-14
+  Actual: 2021-01-15
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at stepDefinations.CurrExchangeRateSD.user_validate_in_response_body_as_Latest_date(CurrExchangeRateSD.java:83)
+	at ✽.user validate "date" in response body as Latest date(file:///C:/HSBC_CandidateAssessment_Automation_Tester/Foreign-Exchange-Rates/src/test/java/features/CurrExchangeRate.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Latest Foreign Exchange rates API 2" time="0.96">
+<failure message="1 expectation failed.&#10;JSON path date doesn't match.&#10;Expected: 2021-01-14&#10;  Actual: 2021-01-15&#10;" type="java.lang.AssertionError"><![CDATA[Given user set Latest ForeignExchangeRates api with param "base" as "USD"...passed
+When user calls "LatestForeignExchangeRates" api with "Get" https request...passed
+Then user receive valid HTTP response code 200..............................passed
+And user validate "base" currency in response body as "USD".................passed
+And user validate "date" in response body as Latest date....................failed
+And user validate count of total currencies under "rates" in response body is "33".skipped
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+JSON path date doesn't match.
+Expected: 2021-01-14
+  Actual: 2021-01-15
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at stepDefinations.CurrExchangeRateSD.user_validate_in_response_body_as_Latest_date(CurrExchangeRateSD.java:83)
+	at ✽.user validate "date" in response body as Latest date(file:///C:/HSBC_CandidateAssessment_Automation_Tester/Foreign-Exchange-Rates/src/test/java/features/CurrExchangeRate.feature:18)
+]]></failure>
+</testcase>
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Latest Foreign Exchange rates API 3" time="1.011">
+<failure message="1 expectation failed.&#10;JSON path date doesn't match.&#10;Expected: 2021-01-14&#10;  Actual: 2021-01-15&#10;" type="java.lang.AssertionError"><![CDATA[Given user set Latest ForeignExchangeRates api with param "symbols" as "USD".passed
+When user calls "LatestForeignExchangeRates" api with "Get" https request...passed
+Then user receive valid HTTP response code 200..............................passed
+And user validate "base" currency in response body as "EUR".................passed
+And user validate "date" in response body as Latest date....................failed
+And user validate count of total currencies under "rates" in response body is "1".skipped
+And user validate "rates" target currency in response body as "USD".........skipped
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+JSON path date doesn't match.
+Expected: 2021-01-14
+  Actual: 2021-01-15
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at stepDefinations.CurrExchangeRateSD.user_validate_in_response_body_as_Latest_date(CurrExchangeRateSD.java:83)
+	at ✽.user validate "date" in response body as Latest date(file:///C:/HSBC_CandidateAssessment_Automation_Tester/Foreign-Exchange-Rates/src/test/java/features/CurrExchangeRate.feature:27)
+]]></failure>
+</testcase>
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Latest Foreign Exchange rates API 4" time="0.588">
+<failure message="1 expectation failed.&#10;JSON path date doesn't match.&#10;Expected: 2021-01-14&#10;  Actual: 2021-01-15&#10;" type="java.lang.AssertionError"><![CDATA[Given user set Latest ForeignExchangeRates api with param "base" as "USD" & "symbols" as "EUR".passed
+When user calls "LatestForeignExchangeRates" api with "Get" https request...passed
+Then user receive valid HTTP response code 200..............................passed
+And user validate "base" currency in response body as "USD".................passed
+And user validate "date" in response body as Latest date....................failed
+And user validate count of total currencies under "rates" in response body is "1".skipped
+And user validate "rates" target currency in response body as "EUR".........skipped
+
+StackTrace:
+java.lang.AssertionError: 1 expectation failed.
+JSON path date doesn't match.
+Expected: 2021-01-14
+  Actual: 2021-01-15
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at stepDefinations.CurrExchangeRateSD.user_validate_in_response_body_as_Latest_date(CurrExchangeRateSD.java:83)
+	at ✽.user validate "date" in response body as Latest date(file:///C:/HSBC_CandidateAssessment_Automation_Tester/Foreign-Exchange-Rates/src/test/java/features/CurrExchangeRate.feature:37)
+]]></failure>
+</testcase>
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Latest Foreign Exchange rates API 5" time="0.812">
+<system-out><![CDATA[Given user set Latest ForeignExchangeRates api with param "symbols" as "EUR".passed
+When user calls "LatestForeignExchangeRates" api with "Get" https request...passed
+Then user receive valid HTTP response code 400..............................passed
+And user receive "error" validation message "Symbols 'EUR' are invalid for date" in response body.passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Specific date Foreign Exchange Rates" time="0.772">
+<system-out><![CDATA[Given user set Specific date ForeignExchangeRates api.......................passed
+When user calls "SpecificDateForeignExchangeRates" api with "Get" https request.passed
+Then user receive valid HTTP response code 200..............................passed
+And user validate "base" currency in response body as "EUR".................passed
+And user validate count of total currencies under "rates" in response body is "32".passed
+And user validate "date" in response body as "2020-12-31" date..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Specific date Foreign Exchange Rates 2" time="0.72">
+<system-out><![CDATA[Given user set Specific date ForeignExchangeRates api with param "base" as "USD".passed
+When user calls "SpecificDateForeignExchangeRates" api with "Get" https request.passed
+Then user receive valid HTTP response code 200..............................passed
+And user validate "base" currency in response body as "USD".................passed
+And user validate count of total currencies under "rates" in response body is "33".passed
+And user validate "date" in response body as "2020-12-31" date..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Specific date Foreign Exchange Rates 3" time="0.696">
+<system-out><![CDATA[Given user set Specific date ForeignExchangeRates api with param "symbols" as "USD".passed
+When user calls "SpecificDateForeignExchangeRates" api with "Get" https request.passed
+Then user receive valid HTTP response code 200..............................passed
+And user validate "base" currency in response body as "EUR".................passed
+And user validate count of total currencies under "rates" in response body is "1".passed
+And user validate "date" in response body as "2020-12-31" date..............passed
+And user validate "rates" target currency in response body as "USD".........passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Specific date Foreign Exchange Rates 4" time="0.706">
+<system-out><![CDATA[Given user set Specific date ForeignExchangeRates api with param "base" as "USD" & "symbols" as "EUR".passed
+When user calls "SpecificDateForeignExchangeRates" api with "Get" https request.passed
+Then user receive valid HTTP response code 200..............................passed
+And user validate "base" currency in response body as "USD".................passed
+And user validate count of total currencies under "rates" in response body is "1".passed
+And user validate "date" in response body as "2020-12-31" date..............passed
+And user validate "rates" target currency in response body as "EUR".........passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Foreign currency exchange rates api with currency conversion" name="Validate Specific date Foreign Exchange Rates 5" time="2.026">
+<system-out><![CDATA[Given user set Specific date ForeignExchangeRates api with param "symbols" as "EUR".passed
+When user calls "SpecificDateForeignExchangeRates" api with "Get" https request.passed
+Then user receive valid HTTP response code 400..............................passed
+And user receive "error" validation message "Symbols 'EUR' are invalid for date 2021-01-01." in response body.passed
+]]></system-out>
+</testcase>
+</testsuite>

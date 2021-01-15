@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRuner" project="Foreign-Exchange-Rates" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumberOptions.TestRuner" time="4.04">
+    <testsuite name="Validate Foreign currency exchange rates api with currency conversion" time="4.04">
+      <testcase name="Validate Latest Foreign Exchange rates API" classname="Validate Foreign currency exchange rates api with currency conversion" time="4.04">
+        <error>com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "USD" (class pojo.Rates), not marked as ignorable (32 known properties: "hkd", "dkk", "myr", "bgn", "nok", "sgd", "ron", "czk", "nzd", "sek", "brl", "chf", "mxn", "zar", "inr", "thb", "ils", "pln", "jpy", "gbp", "idr", "php", "huf", "try", "rub", "isk", "cad", "hrk", "cny", "krw", "usd", "aud"])
+ at [Source: (String)"{"base":"EUR","rates":{"USD":1.2124},"date":"2021-01-14"}"; line: 1, column: 36] (through reference chain: pojo.CurrencyExchangeRate["rates"]-&gt;pojo.Rates["USD"])&#13;
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)&#13;
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:989)&#13;
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1965)&#13;
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1686)&#13;
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1664)&#13;
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:330)&#13;
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)&#13;
+	at com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)&#13;
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:324)&#13;
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:187)&#13;
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:322)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4591)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3546)&#13;
+	at com.fasterxml.jackson.databind.ObjectMapper$readValue$0.call(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)&#13;
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.groovy:46)&#13;
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)&#13;
+	at io.restassured.internal.mapping.Jackson2Mapper.deserialize(Jackson2Mapper.groovy:58)&#13;
+	at io.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)&#13;
+	at io.restassured.internal.mapping.ObjectMapping.parseWithJackson2(ObjectMapping.groovy:238)&#13;
+	at io.restassured.internal.mapping.ObjectMapping$parseWithJackson2$0.callStatic(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)&#13;
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:59)&#13;
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)&#13;
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:231)&#13;
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)&#13;
+	at stepDefinations.CurrExchangeRateSD.user_validate_target_currency_in_response_body_as(CurrExchangeRateSD.java:112)&#13;
+	at ✽.user validate "rates" target currency in response body as "USD"(file:///C:/HSBC_CandidateAssessment_Automation_Tester/Foreign-Exchange-Rates/src/test/java/features/CurrExchangeRate.feature:11)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

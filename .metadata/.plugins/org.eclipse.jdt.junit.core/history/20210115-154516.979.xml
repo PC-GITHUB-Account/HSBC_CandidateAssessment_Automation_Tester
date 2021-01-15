@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRuner" project="Foreign-Exchange-Rates" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="cucumberOptions.TestRuner" time="4.75">
+    <testsuite name="Validate Foreign currency exchange rates api with currency conversion" time="4.75">
+      <testcase name="Validate Latest Foreign Exchange rates API" classname="Validate Foreign currency exchange rates api with currency conversion" time="4.75">
+        <failure>
+          <expected>33</expected>
+          <actual>32</actual>org.junit.ComparisonFailure: expected:&lt;3[3]&gt; but was:&lt;3[2]&gt;&#13;
+	at org.junit.Assert.assertEquals(Assert.java:115)&#13;
+	at org.junit.Assert.assertEquals(Assert.java:144)&#13;
+	at stepDefinations.CurrExchangeRateSD.user_validate_count_of_total_currencies_under_in_response_body_is(CurrExchangeRateSD.java:93)&#13;
+	at ✽.user validate count of total currencies under "rates" in response body is "32"(file:///C:/HSBC_CandidateAssessment_Automation_Tester/Foreign-Exchange-Rates/src/test/java/features/CurrExchangeRate.feature:10)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

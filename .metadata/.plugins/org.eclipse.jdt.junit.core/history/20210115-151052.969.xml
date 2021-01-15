@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRuner" project="Foreign-Exchange-Rates" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumberOptions.TestRuner" time="45.636">
+    <testsuite name="Validate Foreign currency exchange rates api with currency conversion" time="45.636">
+      <testcase name="Validate Latest Foreign Exchange rates API" classname="Validate Foreign currency exchange rates api with currency conversion" time="45.636">
+        <error>java.lang.NumberFormatException: For input string: "[GBP:0.88943, HKD:9.4005, IDR:17026.94, ILS:3.8095, DKK:7.4393, INR:88.6625, CHF:1.0805, MXN:24.0418, CZK:26.19, SGD:1.609, THB:36.396, HRK:7.569, MYR:4.8932, NOK:10.3108, CNY:7.8409, BGN:1.9558, PHP:58.232, SEK:10.1059, PLN:4.5379, ZAR:18.4147, CAD:1.5381, ISK:156.6, BRL:6.3888, RON:4.8738, NZD:1.6853, TRY:8.9492, JPY:126.21, RUB:89.09, KRW:1330.37, USD:1.2124, HUF:359.57, AUD:1.5642]"&#13;
+	at java.lang.NumberFormatException.forInputString(Unknown Source)&#13;
+	at java.lang.Integer.parseInt(Unknown Source)&#13;
+	at java.lang.Integer.parseInt(Unknown Source)&#13;
+	at java_lang_Integer$parseInt.call(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)&#13;
+	at io.restassured.internal.common.path.ObjectConverter.convertObjectTo(ObjectConverter.groovy:29)&#13;
+	at io.restassured.path.json.JsonPath.getInt(JsonPath.java:245)&#13;
+	at utils.Utils.getJsonResponSeValuesCount(Utils.java:84)&#13;
+	at stepDefinations.CurrExchangeRateSD.user_validate_count_of_total_currencies_under_in_response_body_is(CurrExchangeRateSD.java:97)&#13;
+	at ✽.user validate count of total currencies under "rate" in response body is "32"(file:///C:/HSBC_CandidateAssessment_Automation_Tester/Foreign-Exchange-Rates/src/test/java/features/CurrExchangeRate.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

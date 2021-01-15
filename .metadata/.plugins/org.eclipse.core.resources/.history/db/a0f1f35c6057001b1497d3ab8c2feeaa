@@ -1,0 +1,211 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-15T17:38:10.127Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.CurrExchangeRateSD.addDescToReports(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate Specific date Foreign Exchange Rates",
+        "description": "",
+        "id": "validate-foreign-currency-exchange-rates-api-with-currency-conversion;validate-specific-date-foreign-exchange-rates",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Http Request is created Sucessfully with Param symbols Values"
+            ],
+            "result": {
+              "duration": 691000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user set Specific date ForeignExchangeRates api with param \"symbols\" as \"USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"symbols\"",
+                  "offset": 59
+                },
+                {
+                  "val": "\"USD\"",
+                  "offset": 72
+                }
+              ],
+              "location": "stepDefinations.CurrExchangeRateSD.user_set_specific_date_foreign_exchange_rates_api_with_param_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "SpecificDateForeignExchangeRates Http Request Get Sucessfuly"
+            ],
+            "result": {
+              "duration": 2330000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"SpecificDateForeignExchangeRates\" api with \"Get\" https request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SpecificDateForeignExchangeRates\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Get\"",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinations.CurrExchangeRateSD.user_calls_api_with_https_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "output": [
+              "Http Response Code is : 200"
+            ],
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user receive valid HTTP response code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinations.CurrExchangeRateSD.user_receive_valid_http_response_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Base Currency in response Body is : EUR"
+            ],
+            "result": {
+              "duration": 738000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validate \"base\" currency in response body as \"EUR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"base\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"EUR\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinations.CurrExchangeRateSD.user_validate_currency_in_response_body_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Count of total currencies is : 1"
+            ],
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user validate count of total currencies under \"rates\" in response body is \"1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rates\"",
+                  "offset": 46
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 74
+                }
+              ],
+              "location": "stepDefinations.CurrExchangeRateSD.user_validate_count_of_total_currencies_under_in_response_body_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Date for which Foreign currency exchange rates reflect in response : 2021-01-01"
+            ],
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user validate \"date\" in response body as \"2021-01-01\" date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"date\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"2021-01-01\"",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinations.CurrExchangeRateSD.user_validate_in_response_body_as_date(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "target Currency in response Body is : USD"
+            ],
+            "result": {
+              "duration": 17000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validate \"rates\" target currency in response body as \"USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rates\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"USD\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinations.CurrExchangeRateSD.user_validate_target_currency_in_response_body_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Validate Foreign currency exchange rates api with currency conversion",
+    "description": "",
+    "id": "validate-foreign-currency-exchange-rates-api-with-currency-conversion",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/CurrExchangeRate.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,105 @@
+package stepDefinations;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertEquals;
+
+import java.io.IOException;
+
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.response.Response;
+import pojo.CurrencyExchangeRate;
+import resources.APIResources;
+import utils.Utils;
+
+public class CurrExchangeRateSD extends Utils{
+	
+	Scenario sc;	
+	Response response;
+	CurrencyExchangeRate cer;
+	
+	@Before
+	public void addDescToReports(Scenario scenario) {
+	        this.sc = scenario;
+	}
+
+	@Given("user set Latest ForeignExchangeRates api")
+	public void user_set_latest_foreign_exchange_rates_api() throws IOException {
+	
+		reqspec = given().spec(requestSpecification());
+		sc.log("Http Request is created Sucessfully ");
+						  
+	}
+
+	@When("user calls {string} api with {string} https request")
+	public void user_calls_api_with_https_request(String resource, String method) {
+		
+		APIResources resourceAPI = APIResources.valueOf(resource);
+
+		if(method.equalsIgnoreCase("POST")){
+		
+		response =reqspec.when().post(resourceAPI.getResource());
+		sc.log(resource+" Http Request Post Sucessfuly");
+		}
+
+		else if(method.equalsIgnoreCase("GET")){
+			
+		response =reqspec.when().get(resourceAPI.getResource());
+		sc.log(resource+" Http Request Get Sucessfuly");
+		}
+
+		else if(method.equalsIgnoreCase("DELETE")){
+			
+		response =reqspec.when().delete(resourceAPI.getResource());
+		sc.log(resource+" Http Request Post Sucessfuly");
+		}	
+	  
+	}
+
+	@Then("user receive valid HTTP response code {int}")
+	public void user_receive_valid_http_response_code(Integer Sucesscode) {
+		
+		
+		response.then().spec(responseSpecification(Sucesscode));
+		sc.log("Http Response Code is : "+Sucesscode);
+	   
+	}
+	
+	@Then("user validate {string} currency in response body as {string}")
+	public void user_validate_currency_in_response_body_as(String key, String value) {
+	
+		response.then().assertThat().body(key, equalTo(value));
+		sc.log("Base Currency in response Body is : "+value);
+		
+	}
+
+	@Then("user validate {string} in response body as {string} date")
+	public void user_validate_in_response_body_as_yesterday_date(String key, String value ) {
+	    
+		value = getCurrrentTimeStamp();
+		
+		response.then().assertThat().body(key, equalTo(value));
+		sc.log("Date in response Body is yesterday date: "+value);
+		
+		
+	}
+
+	@Then("user validate count of total currencies under {string} in response body is {string}")
+	public void user_validate_count_of_total_currencies_under_in_response_body_is(String key, String count) {
+	  
+		
+		
+		String sum = getJsonResponSeValuesCount(response, "$.key");
+		assertEquals(sum,count);
+		//sc.log("Response Key "+key+" matched Sucessfully with Request Key "+"PC-"+VendorPayloads.code);
+		
+	}
+
+	
+	
+	
+}

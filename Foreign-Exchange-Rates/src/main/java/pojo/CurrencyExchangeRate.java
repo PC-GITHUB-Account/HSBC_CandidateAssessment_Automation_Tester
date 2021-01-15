@@ -5,7 +5,7 @@ public class CurrencyExchangeRate {
 	private String base;
 	private Rates rates;
 	private String date;
-	
+		
 	public String getBase() {
 		return base;
 	}

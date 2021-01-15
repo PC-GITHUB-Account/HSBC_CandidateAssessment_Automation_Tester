@@ -3,7 +3,7 @@ package pojo;
 public class Rates {
 	
 	private String GBP;
-	private String  HKD;
+	private String HKD;
 	private String IDR;
 	private String ILS;
 	private String DKK;

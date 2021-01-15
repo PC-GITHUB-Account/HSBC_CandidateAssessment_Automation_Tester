@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRuner" project="Foreign-Exchange-Rates" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumberOptions.TestRuner" time="1.712">
+    <testsuite name="Validate Foreign currency exchange rates api with currency conversion" time="1.712">
+      <testcase name="Validate Latest Foreign Exchange rates API" classname="Validate Foreign currency exchange rates api with currency conversion" time="1.712">
+        <error>java.lang.IllegalArgumentException: Base URI cannot be null&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)&#13;
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)&#13;
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)&#13;
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)&#13;
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)&#13;
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)&#13;
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)&#13;
+	at io.restassured.internal.RequestSpecificationImpl.baseUri(RequestSpecificationImpl.groovy:685)&#13;
+	at io.restassured.builder.RequestSpecBuilder.setBaseUri(RequestSpecBuilder.java:981)&#13;
+	at utils.Utils.requestSpecification(Utils.java:85)&#13;
+	at stepDefinations.CurrExchangeRateSD.user_set_latest_foreign_exchange_rates_api(CurrExchangeRateSD.java:31)&#13;
+	at ✽.user set Latest ForeignExchangeRates api(file:///C:/HSBC_CandidateAssessment_Automation_Tester/Foreign-Exchange-Rates/src/test/java/features/CurrExchangeRate.feature:5)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,50 @@
+package stepDefinations;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertEquals;
+
+import java.io.IOException;
+
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+import io.restassured.specification.ResponseSpecification;
+import utils.Utils;
+
+public class CurrExchangeRateSD extends Utils{
+	
+	Scenario sc;	
+	Response response;
+	
+	@Before
+	public void addDescToReports(Scenario scenario) {
+	        this.sc = scenario;
+	}
+
+	@Given("user set Latest ForeignExchangeRates api")
+	public void user_set_latest_foreign_exchange_rates_api() throws IOException {
+	
+		reqspec = given().spec(requestSpecification());
+				  
+				  
+	}
+
+	@When("user calls {string} api with {string} https request")
+	public void user_calls_api_with_https_request(String string, String string2) {
+	   
+	}
+
+	@Then("user receive valid HTTP response code {int}")
+	public void user_receive_valid_http_response_code(Integer int1) {
+	   
+	}
+
+	
+	
+	
+}

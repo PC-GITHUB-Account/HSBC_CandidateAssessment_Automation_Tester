@@ -3,7 +3,7 @@ package resources;
 public enum APIResources {
 	
 	LatestForeignExchangeRates ("/api/latest"),
-	SpecificDateForeignExchangeRates("/api/2010-01-12");
+	SpecificDateForeignExchangeRates("/api/2021-01-01");
 
 	private String resource;
 	

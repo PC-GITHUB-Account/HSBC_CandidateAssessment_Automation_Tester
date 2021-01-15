@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRuner" project="Foreign-Exchange-Rates" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumberOptions.TestRuner" time="45.62">
+    <testsuite name="Validate Foreign currency exchange rates api with currency conversion" time="45.62">
+      <testcase name="Validate Latest Foreign Exchange rates API" classname="Validate Foreign currency exchange rates api with currency conversion" time="45.62">
+        <error>java.lang.NullPointerException&#13;
+	at utils.Utils.getJsonResponSeValuesCount(Utils.java:83)&#13;
+	at stepDefinations.CurrExchangeRateSD.user_validate_count_of_total_currencies_under_in_response_body_is(CurrExchangeRateSD.java:97)&#13;
+	at ✽.user validate count of total currencies under "rate" in response body is "32"(file:///C:/HSBC_CandidateAssessment_Automation_Tester/Foreign-Exchange-Rates/src/test/java/features/CurrExchangeRate.feature:10)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

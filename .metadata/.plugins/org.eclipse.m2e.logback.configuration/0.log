@@ -278,3 +278,760 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2021-01-14 06:35:20,030 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
 2021-01-14 06:38:15,554 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-01-14 06:38:15,555 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 06:38:15,556 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 06:38:15,556 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 13:56:06,627 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.foreignexchangerate:Foreign-Exchange-Rates:1.0 @ C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\pom.xml.
+2021-01-14 13:56:12,642 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 13:56:12,643 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 13:56:12,645 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 13:56:12,645 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 19:52:15,404 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 19:52:15,406 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 19:52:15,408 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 19:52:15,408 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 20:01:50,559 [Worker-132] WARN  o.e.r.models.ModelRepository - Failed to download org.eclipse.recommenders:index::zip:0.0.0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/neon/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[na:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:193) [org.eclipse.recommenders.models_2.4.6.v20170307-1041.jar:na]
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172) [org.eclipse.recommenders.models_2.4.6.v20170307-1041.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:169) [org.eclipse.recommenders.models.rcp_2.4.6.v20170307-1041.jar:na]
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76) [org.eclipse.recommenders.models.rcp_2.4.6.v20170307-1041.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.8.0.v20160509-0411.jar:na]
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/neon/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:39) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67) ~[na:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249) ~[org.eclipse.aether.connector.basic_1.0.1.v20141111.jar:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520) ~[na:na]
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421) ~[na:na]
+	... 8 common frames omitted
+2021-01-14 20:18:36,275 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 20:18:36,275 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 20:18:36,276 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 20:18:36,276 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 20:20:05,702 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 20:20:05,702 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 20:20:05,704 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 20:20:05,704 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 20:24:49,847 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 20:24:49,847 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 20:24:49,848 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 20:24:49,848 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:08:35,665 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:08:35,676 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:08:35,681 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:08:35,682 [Worker-225] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:22:22,121 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:22:22,121 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:22:22,122 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:22:22,123 [Worker-235] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:24:08,228 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:24:08,228 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:24:08,228 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:24:08,228 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:24:52,833 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:24:52,833 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:24:52,833 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:24:52,833 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:25:45,310 [Worker-236] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3-sources.jar
+2021-01-14 22:25:46,390 [Worker-236] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3-sources.jar
+2021-01-14 22:25:46,736 [Worker-236] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.rest-assured:rest-assured:4.3.3
+2021-01-14 22:25:47,191 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:25:47,191 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:25:47,191 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:25:47,191 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:26:33,224 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:26:33,224 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:26:33,225 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:26:33,225 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:27:34,677 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:27:34,677 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:27:34,677 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:27:34,677 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:30:33,218 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:30:33,218 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:30:33,218 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:30:33,218 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:46:51,350 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:46:51,350 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:46:51,350 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:46:51,350 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:47:48,819 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:47:48,819 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:47:48,820 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:47:48,820 [Worker-246] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:51:07,050 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:51:07,051 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:51:07,052 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:51:07,052 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:51:53,549 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:51:53,549 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:51:53,550 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:51:53,551 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 22:58:06,640 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:58:06,640 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 22:58:06,644 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 22:58:06,644 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:04:07,935 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:04:07,935 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:04:07,936 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:04:07,936 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:07:06,269 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:07:06,270 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:07:06,274 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:07:06,275 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:07:17,127 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:07:17,128 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:07:17,134 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:07:17,134 [Worker-256] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:08:53,565 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:08:53,566 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:08:53,567 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:08:53,567 [Worker-254] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:10:07,738 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:10:07,738 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:10:07,741 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:10:07,743 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:14:40,410 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:14:40,410 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:14:40,413 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:14:40,413 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:14:41,547 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:14:41,547 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:14:41,548 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:14:41,548 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:25:01,141 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:25:01,141 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:25:01,142 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:25:01,142 [Worker-270] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:25:02,175 [Worker-272] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:25:02,175 [Worker-272] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:25:02,179 [Worker-272] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:25:02,180 [Worker-272] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:28:24,712 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:28:24,712 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:28:24,713 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:28:24,713 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-14 23:36:29,155 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:36:29,155 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-14 23:36:29,171 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-14 23:36:29,171 [Worker-286] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 00:39:46,739 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 00:39:46,739 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 00:39:46,739 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 00:39:46,739 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 00:41:07,359 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 00:41:07,359 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 00:41:07,359 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 00:41:07,360 [Worker-313] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 01:16:19,257 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:16:19,257 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 01:16:19,273 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:16:19,273 [Worker-334] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 01:16:20,325 [Worker-338] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:16:20,325 [Worker-338] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 01:16:20,326 [Worker-338] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:16:20,326 [Worker-338] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 01:16:54,264 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:16:54,264 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 01:16:54,265 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:16:54,266 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 01:17:57,332 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:17:57,332 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 01:17:57,333 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:17:57,333 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 01:21:51,133 [Worker-341] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:21:51,133 [Worker-341] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 01:21:51,134 [Worker-341] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:21:51,134 [Worker-341] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 01:23:04,157 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:23:04,157 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 01:23:04,158 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:23:04,158 [Worker-328] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 01:23:05,204 [Worker-342] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:23:05,205 [Worker-342] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 01:23:05,208 [Worker-342] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 01:23:05,208 [Worker-342] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 14:07:00,735 [Worker-372] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:07:00,735 [Worker-372] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 14:07:00,736 [Worker-372] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:07:00,736 [Worker-372] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 14:07:01,785 [Worker-374] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:07:01,786 [Worker-374] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 14:07:01,788 [Worker-374] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:07:01,788 [Worker-374] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 14:24:10,026 [Worker-387] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:24:10,026 [Worker-387] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 14:24:10,026 [Worker-387] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:24:10,026 [Worker-387] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 14:24:11,071 [Worker-388] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:24:11,072 [Worker-388] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 14:24:11,074 [Worker-388] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:24:11,075 [Worker-388] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 14:24:28,159 [Worker-384] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:24:28,159 [Worker-384] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 14:24:28,159 [Worker-384] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:24:28,159 [Worker-384] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 14:48:30,691 [Worker-405] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:48:30,692 [Worker-405] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 14:48:30,692 [Worker-405] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:48:30,692 [Worker-405] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 14:48:31,717 [Worker-409] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:48:31,717 [Worker-409] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 14:48:31,718 [Worker-409] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:48:31,718 [Worker-409] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 14:52:46,138 [Worker-413] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:52:46,138 [Worker-413] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 14:52:46,139 [Worker-413] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 14:52:46,140 [Worker-413] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:03:27,094 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:03:27,095 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:03:27,096 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:03:27,096 [Worker-426] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:03:51,895 [Worker-415] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:03:51,896 [Worker-415] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:03:51,896 [Worker-415] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:03:51,896 [Worker-415] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:08:37,690 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:08:37,690 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:08:37,690 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:08:37,691 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:08:38,713 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:08:38,714 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:08:38,714 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:08:38,714 [Worker-427] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:10:51,762 [Worker-433] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:10:51,762 [Worker-433] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:10:51,764 [Worker-433] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:10:51,764 [Worker-433] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:10:52,891 [Worker-433] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:10:52,892 [Worker-433] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:10:52,892 [Worker-433] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:10:52,892 [Worker-433] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:11:52,721 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:11:52,721 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:11:52,721 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:11:52,722 [Worker-429] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:11:53,769 [Worker-436] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:11:53,770 [Worker-436] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:11:53,773 [Worker-436] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:11:53,774 [Worker-436] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:20:03,382 [Worker-438] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:20:03,382 [Worker-438] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:20:03,383 [Worker-438] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:20:03,383 [Worker-438] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:20:04,432 [Worker-440] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:20:04,433 [Worker-440] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:20:04,434 [Worker-440] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:20:04,435 [Worker-440] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:22:56,083 [Worker-441] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:22:56,083 [Worker-441] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:22:56,084 [Worker-441] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:22:56,084 [Worker-441] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:23:29,489 [Worker-439] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:23:29,489 [Worker-439] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:23:29,490 [Worker-439] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:23:29,490 [Worker-439] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:36:35,724 [Worker-451] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:36:35,725 [Worker-451] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:36:35,726 [Worker-451] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:36:35,730 [Worker-451] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:39:31,087 [Worker-449] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:39:31,087 [Worker-449] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:39:31,088 [Worker-449] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:39:31,088 [Worker-449] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:44:58,765 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:44:58,766 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:44:58,767 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:44:58,767 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:44:59,813 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:44:59,814 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:44:59,816 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:44:59,816 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:46:08,265 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:46:08,265 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:46:08,266 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:46:08,267 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:46:09,405 [Worker-456] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:46:09,406 [Worker-456] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:46:09,408 [Worker-456] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:46:09,408 [Worker-456] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:48:38,903 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:48:38,904 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:48:38,905 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:48:38,905 [Worker-454] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:48:39,948 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:48:39,949 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:48:39,949 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:48:39,952 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:52:11,460 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:52:11,461 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:52:11,462 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:52:11,462 [Worker-458] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 15:52:12,512 [Worker-459] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:52:12,513 [Worker-459] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 15:52:12,515 [Worker-459] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 15:52:12,516 [Worker-459] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 16:36:45,411 [Worker-476] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:36:45,412 [Worker-476] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 16:36:45,413 [Worker-476] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:36:45,413 [Worker-476] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 16:36:46,597 [Worker-476] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:36:46,597 [Worker-476] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 16:36:46,598 [Worker-476] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:36:46,598 [Worker-476] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 16:45:11,077 [Worker-488] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:45:11,077 [Worker-488] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 16:45:11,082 [Worker-488] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:45:11,082 [Worker-488] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 16:45:12,227 [Worker-486] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:45:12,227 [Worker-486] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 16:45:12,228 [Worker-486] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:45:12,228 [Worker-486] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 16:51:38,917 [Worker-490] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:51:38,918 [Worker-490] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 16:51:38,918 [Worker-490] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:51:38,919 [Worker-490] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 16:51:40,041 [Worker-486] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:51:40,041 [Worker-486] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 16:51:40,042 [Worker-486] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 16:51:40,042 [Worker-486] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:01:10,615 [Worker-499] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:01:10,616 [Worker-499] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:01:10,617 [Worker-499] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:01:10,617 [Worker-499] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:01:11,669 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:01:11,670 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:01:11,671 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:01:11,672 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:01:25,047 [Worker-478] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:01:25,047 [Worker-478] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:01:25,049 [Worker-478] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:01:25,049 [Worker-478] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:01:34,129 [Worker-498] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:01:34,129 [Worker-498] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:01:34,129 [Worker-498] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:01:34,129 [Worker-498] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:05:45,697 [Worker-497] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:05:45,697 [Worker-497] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:05:45,699 [Worker-497] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:05:45,699 [Worker-497] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:05:46,839 [Worker-502] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:05:46,839 [Worker-502] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:05:46,840 [Worker-502] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:05:46,840 [Worker-502] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:06:39,255 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:06:39,255 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:06:39,256 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:06:39,256 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:06:40,387 [Worker-497] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:06:40,387 [Worker-497] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:06:40,388 [Worker-497] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:06:40,388 [Worker-497] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:08:44,047 [Worker-495] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:08:44,047 [Worker-495] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:08:44,048 [Worker-495] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:08:44,048 [Worker-495] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:08:45,087 [Worker-478] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:08:45,087 [Worker-478] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:08:45,091 [Worker-478] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:08:45,092 [Worker-478] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:09:52,848 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:09:52,848 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:09:52,849 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:09:52,849 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:09:53,972 [Worker-503] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:09:53,973 [Worker-503] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:09:53,974 [Worker-503] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:09:53,974 [Worker-503] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:12:05,952 [Worker-495] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:12:05,953 [Worker-495] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:12:05,954 [Worker-495] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:12:05,954 [Worker-495] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:12:07,098 [Worker-500] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:12:07,098 [Worker-500] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:12:07,099 [Worker-500] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:12:07,100 [Worker-500] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:12:50,891 [Worker-502] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:12:50,891 [Worker-502] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:12:50,892 [Worker-502] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:12:50,892 [Worker-502] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:12:51,933 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:12:51,933 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:12:51,936 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:12:51,937 [Worker-494] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:15:26,941 [Worker-504] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:15:26,941 [Worker-504] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:15:26,941 [Worker-504] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:15:26,941 [Worker-504] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:15:27,976 [Worker-503] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:15:27,976 [Worker-503] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:15:27,976 [Worker-503] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:15:27,976 [Worker-503] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:28:50,227 [Worker-504] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:28:50,228 [Worker-504] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:28:50,228 [Worker-504] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:28:50,229 [Worker-504] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:29:40,183 [Worker-510] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:29:40,183 [Worker-510] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:29:40,184 [Worker-510] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:29:40,184 [Worker-510] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:29:41,227 [Worker-513] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:29:41,227 [Worker-513] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:29:41,227 [Worker-513] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:29:41,231 [Worker-513] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:45:39,984 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:45:39,984 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:45:39,985 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:45:39,985 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:45:41,108 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:45:41,108 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:45:41,109 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:45:41,109 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:47:10,527 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:47:10,527 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:47:10,528 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:47:10,528 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:47:11,654 [Worker-523] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:47:11,655 [Worker-523] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:47:11,655 [Worker-523] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:47:11,656 [Worker-523] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:48:05,615 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:48:05,615 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:48:05,615 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:48:05,615 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:48:06,777 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:48:06,777 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:48:06,782 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:48:06,783 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:48:49,994 [Worker-526] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:48:49,994 [Worker-526] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:48:49,994 [Worker-526] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:48:49,994 [Worker-526] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:48:51,122 [Worker-524] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:48:51,123 [Worker-524] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:48:51,232 [Worker-524] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:48:51,232 [Worker-524] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:51:33,854 [Worker-529] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:51:33,854 [Worker-529] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:51:33,854 [Worker-529] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:51:33,854 [Worker-529] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:51:34,985 [Worker-530] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:51:34,985 [Worker-530] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:51:34,986 [Worker-530] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:51:34,986 [Worker-530] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:52:06,173 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:52:06,173 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:52:06,174 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:52:06,174 [Worker-522] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:52:07,295 [Worker-531] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:52:07,295 [Worker-531] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:52:07,296 [Worker-531] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:52:07,297 [Worker-531] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:56:36,360 [Worker-521] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:56:36,360 [Worker-521] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:56:36,362 [Worker-521] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:56:36,362 [Worker-521] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 17:56:37,491 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:56:37,491 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 17:56:37,492 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 17:56:37,492 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 18:01:19,954 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:01:19,955 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 18:01:19,955 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:01:19,955 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 18:05:15,972 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:05:15,972 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 18:05:15,976 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:05:15,977 [Worker-536] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 18:05:17,026 [Worker-538] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:05:17,026 [Worker-538] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 18:05:17,030 [Worker-538] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:05:17,031 [Worker-538] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 18:15:19,424 [Worker-546] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:15:19,424 [Worker-546] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 18:15:19,432 [Worker-546] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:15:19,433 [Worker-546] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 18:20:10,375 [Worker-554] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:20:10,375 [Worker-554] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 18:20:10,376 [Worker-554] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:20:10,376 [Worker-554] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 18:57:27,592 [Worker-575] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:57:27,592 [Worker-575] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 18:57:27,593 [Worker-575] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 18:57:27,593 [Worker-575] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:14:58,269 [Worker-590] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:14:58,270 [Worker-590] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:14:58,271 [Worker-590] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:14:58,271 [Worker-590] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:16:02,282 [Worker-589] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:16:02,282 [Worker-589] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:16:02,282 [Worker-589] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:16:02,283 [Worker-589] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:16:03,417 [Worker-590] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:16:03,417 [Worker-590] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:16:03,418 [Worker-590] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:16:03,418 [Worker-590] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:19:01,403 [Worker-584] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:19:01,403 [Worker-584] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:19:01,404 [Worker-584] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:19:01,405 [Worker-584] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:21:50,930 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:21:50,930 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:21:50,930 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:21:50,930 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:23:26,982 [Worker-587] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:23:26,983 [Worker-587] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:23:26,983 [Worker-587] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:23:26,983 [Worker-587] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:25:13,665 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:25:13,666 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:25:13,666 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:25:13,667 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:26:05,895 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:26:05,896 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:26:05,898 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:26:05,899 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:26:06,938 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:26:06,988 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:26:06,990 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:26:06,991 [Worker-595] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:30:45,432 [Worker-604] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:30:45,432 [Worker-604] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:30:45,433 [Worker-604] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:30:45,434 [Worker-604] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:30:46,475 [Worker-602] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:30:46,476 [Worker-602] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:30:46,478 [Worker-602] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:30:46,479 [Worker-602] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:33:34,363 [Worker-598] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:33:34,363 [Worker-598] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:33:34,364 [Worker-598] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:33:34,364 [Worker-598] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:33:35,391 [Worker-606] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:33:35,392 [Worker-606] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:33:35,393 [Worker-606] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:33:35,394 [Worker-606] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:35:57,538 [Worker-604] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:35:57,538 [Worker-604] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:35:57,538 [Worker-604] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:35:57,538 [Worker-604] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:36:59,457 [Worker-598] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:36:59,457 [Worker-598] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:36:59,458 [Worker-598] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:36:59,458 [Worker-598] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 20:38:53,322 [Worker-587] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:38:53,322 [Worker-587] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 20:38:53,324 [Worker-587] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 20:38:53,324 [Worker-587] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 21:49:51,362 [Worker-644] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:49:51,362 [Worker-644] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 21:49:51,363 [Worker-644] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:49:51,364 [Worker-644] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 21:49:52,402 [Worker-639] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:49:52,402 [Worker-639] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 21:49:52,404 [Worker-639] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:49:52,405 [Worker-639] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 21:51:09,661 [Worker-640] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:51:09,661 [Worker-640] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 21:51:09,661 [Worker-640] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:51:09,661 [Worker-640] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 21:51:10,705 [Worker-640] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:51:10,705 [Worker-640] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 21:51:10,705 [Worker-640] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:51:10,708 [Worker-640] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 21:57:24,779 [Worker-645] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:57:24,779 [Worker-645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 21:57:24,779 [Worker-645] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 21:57:24,779 [Worker-645] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:03:28,665 [Worker-651] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:03:28,666 [Worker-651] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:03:28,668 [Worker-651] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:03:28,669 [Worker-651] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:03:29,722 [Worker-650] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:03:29,722 [Worker-650] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:03:29,723 [Worker-650] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:03:29,723 [Worker-650] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:04:02,186 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:04:02,186 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:04:02,187 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:04:02,187 [Worker-647] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:04:03,221 [Worker-648] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:04:03,221 [Worker-648] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:04:03,221 [Worker-648] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:04:03,221 [Worker-648] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:24:31,962 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:24:31,962 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:24:31,962 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:24:31,962 [Worker-657] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:33:35,770 [Worker-664] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:33:35,771 [Worker-664] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:33:35,772 [Worker-664] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:33:35,772 [Worker-664] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:34:59,074 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:34:59,074 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:34:59,074 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:34:59,074 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:35:00,105 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:35:00,106 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:35:00,107 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:35:00,107 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:41:08,474 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:41:08,475 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:41:08,475 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:41:08,475 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:43:48,184 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:43:48,184 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:43:48,187 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:43:48,187 [Worker-667] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:43:49,235 [Worker-676] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:43:49,235 [Worker-676] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:43:49,237 [Worker-676] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:43:49,238 [Worker-676] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:47:45,477 [Worker-677] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:47:45,478 [Worker-677] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:47:45,478 [Worker-677] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:47:45,478 [Worker-677] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:47:46,597 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:47:46,597 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:47:46,598 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:47:46,598 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:48:14,550 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:48:14,550 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:48:14,550 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:48:14,550 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:48:15,589 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:48:15,590 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:48:15,590 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:48:15,590 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:54:30,237 [Worker-692] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:54:30,238 [Worker-692] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:54:30,238 [Worker-692] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:54:30,238 [Worker-692] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:55:16,176 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:55:16,176 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:55:16,176 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:55:16,176 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:55:17,328 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:55:17,329 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:55:17,330 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:55:17,330 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:57:59,237 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:57:59,237 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:57:59,237 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:57:59,237 [Worker-689] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:58:00,362 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:58:00,362 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:58:00,363 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:58:00,363 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:59:42,415 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:59:42,415 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:59:42,416 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:59:42,417 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 22:59:43,458 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:59:43,459 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 22:59:43,460 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 22:59:43,460 [Worker-685] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 23:00:01,222 [Worker-690] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:00:01,222 [Worker-690] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 23:00:01,222 [Worker-690] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:00:01,222 [Worker-690] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 23:03:48,381 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:03:48,381 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 23:03:48,381 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:03:48,382 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 23:03:49,421 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:03:49,422 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 23:03:49,422 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:03:49,422 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 23:07:15,393 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:07:15,393 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 23:07:15,404 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:07:15,405 [Worker-693] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 23:07:16,435 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:07:16,439 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 23:07:16,440 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:07:16,440 [Worker-678] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 23:08:03,536 [Worker-697] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:08:03,537 [Worker-697] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 23:08:03,537 [Worker-697] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:08:03,537 [Worker-697] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 23:08:36,431 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:08:36,431 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 23:08:36,431 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:08:36,431 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 23:08:37,462 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:08:37,462 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 23:08:37,462 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:08:37,462 [Worker-695] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-15 23:08:46,253 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:08:46,253 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-15 23:08:46,254 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-15 23:08:46,254 [Worker-691] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:03:07,310 [Worker-716] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:03:07,310 [Worker-716] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:03:07,311 [Worker-716] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:03:07,311 [Worker-716] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:04:19,358 [Worker-703] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:04:19,358 [Worker-703] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:04:19,359 [Worker-703] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:04:19,359 [Worker-703] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:04:47,808 [Worker-715] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:04:47,809 [Worker-715] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:04:47,810 [Worker-715] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:04:47,811 [Worker-715] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:04:55,427 [Worker-720] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:04:55,427 [Worker-720] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:04:55,428 [Worker-720] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:04:55,428 [Worker-720] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:11:30,855 [Worker-720] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:11:30,855 [Worker-720] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:11:30,855 [Worker-720] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:11:30,855 [Worker-720] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:18:37,606 [Worker-730] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:18:37,607 [Worker-730] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:18:37,607 [Worker-730] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:18:37,607 [Worker-730] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:20:16,002 [Worker-733] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:20:16,003 [Worker-733] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:20:16,003 [Worker-733] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:20:16,003 [Worker-733] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:21:52,522 [Worker-731] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:21:52,522 [Worker-731] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:21:52,527 [Worker-731] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:21:52,527 [Worker-731] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:30:24,043 [Worker-738] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:30:24,043 [Worker-738] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:30:24,044 [Worker-738] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:30:24,044 [Worker-738] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:30:43,935 [Worker-740] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:30:43,935 [Worker-740] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:30:43,936 [Worker-740] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:30:43,936 [Worker-740] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:31:52,525 [Worker-715] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:31:52,525 [Worker-715] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:31:52,525 [Worker-715] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:31:52,525 [Worker-715] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:40:17,417 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:40:17,417 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:40:17,417 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:40:17,417 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:40:30,296 [Worker-747] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:40:30,296 [Worker-747] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:40:30,296 [Worker-747] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:40:30,296 [Worker-747] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:40:36,528 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:40:36,529 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:40:36,530 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:40:36,530 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:40:44,861 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:40:44,861 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:40:44,861 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:40:44,861 [Worker-745] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\test\resources
+2021-01-16 00:41:27,984 [Worker-747] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-16 00:41:27,984 [Worker-747] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\HSBC_CandidateAssessment_Automation_Tester\Foreign-Exchange-Rates\src\main\resources
+2021-01-16 00:41:27,984 [Worker-747] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

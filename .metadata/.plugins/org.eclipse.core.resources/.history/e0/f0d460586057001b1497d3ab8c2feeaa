@@ -1,0 +1,70 @@
+Request method:	GET
+Request URI:	https://api.ratesapi.io/api/latest
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 14 Jan 2021 17:44:43 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d086b081513237853ca1af5e63dfd75611610646283; expires=Sat, 13-Feb-21 17:44:43 GMT; path=/; domain=.ratesapi.io; HttpOnly; SameSite=Lax
+Vary: Accept-Encoding
+Access-Control-Allow-Methods: GET
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 4904
+cf-request-id: 07a398fc5400002c01b5972000000001
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0fSrEgAjUyR2nAtO5famMsVLusyeU5go4vXprn7Ko8DnwwGJW%2BQM%2B0kTbrjTa8nDjlX18uFDZYgMOz7J%2F9ue%2BnBXqWV8w%2F%2FTUbZQubaygVc%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 61192aa6e80d2c01-FRA
+
+{
+    "base": "EUR",
+    "rates": {
+        "GBP": 0.88943,
+        "HKD": 9.4005,
+        "IDR": 17026.94,
+        "ILS": 3.8095,
+        "DKK": 7.4393,
+        "INR": 88.6625,
+        "CHF": 1.0805,
+        "MXN": 24.0418,
+        "CZK": 26.19,
+        "SGD": 1.609,
+        "THB": 36.396,
+        "HRK": 7.569,
+        "MYR": 4.8932,
+        "NOK": 10.3108,
+        "CNY": 7.8409,
+        "BGN": 1.9558,
+        "PHP": 58.232,
+        "SEK": 10.1059,
+        "PLN": 4.5379,
+        "ZAR": 18.4147,
+        "CAD": 1.5381,
+        "ISK": 156.6,
+        "BRL": 6.3888,
+        "RON": 4.8738,
+        "NZD": 1.6853,
+        "TRY": 8.9492,
+        "JPY": 126.21,
+        "RUB": 89.09,
+        "KRW": 1330.37,
+        "USD": 1.2124,
+        "HUF": 359.57,
+        "AUD": 1.5642
+    },
+    "date": "2021-01-14"
+}
