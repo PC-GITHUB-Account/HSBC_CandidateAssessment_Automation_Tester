@@ -1,8 +1,0 @@
-Feature: Validate Foreign currency exchange rates api with currency conversion
-
-@RegressionTest
-Scenario: Validate Latest Foreign Exchange rates API
-  Given user set Latest ForeignExchangeRates api 
-  When user calls "LatestForeignExchangeRates" api with "Get" https request
-  Then user receive valid HTTP response code 200
-  AND user validate "base" in response body is "EUR"

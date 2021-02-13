@@ -40,7 +40,7 @@ public class Utils {
 	public String getyesterdayDate()
 	{
 		 Instant now = Instant.now();
-	     Instant yesterdayTS = now.minus(1, ChronoUnit.DAYS);
+	     Instant yesterdayTS = now.minus(0, ChronoUnit.DAYS);
 	     String yesterday = String.valueOf(yesterdayTS);
 	     String[] strArray = yesterday.split("T");
 			

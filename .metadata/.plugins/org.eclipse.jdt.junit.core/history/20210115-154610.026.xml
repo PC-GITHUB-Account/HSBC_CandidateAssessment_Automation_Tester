@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRuner" project="Foreign-Exchange-Rates" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="cucumberOptions.TestRuner" time="4.762">
-    <testsuite name="Validate Foreign currency exchange rates api with currency conversion" time="4.762">
-      <testcase name="Validate Latest Foreign Exchange rates API" classname="Validate Foreign currency exchange rates api with currency conversion" time="4.762"/>
-    </testsuite>
-  </testsuite>
-</testrun>
